@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+h3 {
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+header {
+  height: 50px;
+  background-color: #296574;
+  -webkit-box-shadow: 0px 6px 10px black;
+          box-shadow: 0px 6px 10px black;
+}
+
+header .navigation {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 20px;
+}
+
+header .navigation .nav-logo a {
+  height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .navigation .nav-logo svg {
+  fill: #c9d7da;
+}
+
+header .navigation .navlinks {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1300px) {
+  header .navigation .navlinks {
+    width: 30%;
+  }
+}
+
+header .navigation .navlinks li {
+  list-style-type: none;
+}
+
+header .navigation .navlinks li a {
+  font-size: 3vw;
+  text-decoration: none;
+  color: #c9d7da;
+}
+
+@media (min-width: 1300px) {
+  header .navigation .navlinks li a {
+    font-size: 1.5vw;
+  }
+}
+
+main {
+  z-index: -1;
+  height: 160vh;
+  background-image: url(images/bakgrund.jpg);
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1300px) {
+  main {
+    height: 240vh;
+  }
+}
+
+main .main-logo {
+  width: 20%;
+  position: absolute;
+  top: 160px;
+  left: 10vw;
+}
+
+@media (min-width: 1300px) {
+  main .main-logo {
+    top: 380px;
+  }
+}
+
+main .main-logo svg {
+  fill: #20460A;
+}
+
+main .intro {
+  position: absolute;
+  top: 400px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 650px) {
+  main .intro {
+    top: 450px;
+  }
+}
+
+@media (min-width: 800px) {
+  main .intro {
+    top: 600px;
+  }
+}
+
+@media (min-width: 1300px) {
+  main .intro {
+    top: 900px;
+  }
+}
+
+main .intro button {
+  border: none;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+  padding: 10px;
+  font-size: 14px;
+  width: 200px;
+  background-color: #2F8196;
+  color: #c9d7da;
+  margin-top: 20px;
+}
+
+main .waves {
+  background-color: #2F8196;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 400px;
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+@media (min-width: 550px) {
+  main .waves {
+    top: 450px;
+  }
+}
+
+@media (min-width: 800px) {
+  main .waves {
+    top: 550px;
+  }
+}
+
+@media (min-width: 1300px) {
+  main .waves {
+    top: 700px;
+  }
+}
+
+main .waves svg {
+  width: 100%;
+  top: -120px;
+  position: absolute;
+  fill: #2F8196;
+}
+
+@media (max-width: 400px) {
+  main .waves svg {
+    top: -100px;
+  }
+}
+
+main .waves .call-to-signup {
+  position: absolute;
+  width: 100%;
+  top: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #c9d7da;
+}
+
+@media (min-width: 640px) {
+  main .waves .call-to-signup {
+    top: -20px;
+  }
+}
+
+main .waves .call-to-signup button {
+  border: none;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+  padding: 10px;
+  font-size: 14px;
+  width: 200px;
+  background-color: #F2C538;
+  color: black;
+  margin-top: 20px;
+}
+
+main .waves .about {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  top: 120px;
+  text-align: center;
+  color: #c9d7da;
+}
+
+main .waves .about .profiles {
+  position: relative;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .waves .about .profiles .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .waves .about .profiles .profile img {
+  height: 100px;
+}
+
+main .waves .about .profiles .profile p {
+  font-size: 8px;
+}
+
+main .waves .about .profiles .profile:nth-child(2), main .waves .about .profiles .profile:nth-child(3) {
+  margin-top: 40px;
+}
+
+footer {
+  height: 100px;
+  background-color: #296574;
+  margin-top: 60px;
+  -webkit-box-shadow: 0px -2px 10px black;
+          box-shadow: 0px -2px 10px black;
+}
+
+@media (min-width: 550px) {
+  footer {
+    margin-top: 120px;
+  }
+}
+
+@media (min-width: 1300px) {
+  footer {
+    margin-top: 60px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

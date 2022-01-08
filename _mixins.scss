@@ -1,0 +1,17 @@
+@mixin heading {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@mixin subheading {
+    margin-top: 6px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+@mixin buttonstyle {
+    border: none;
+    box-shadow: 2px 2px 5px black;
+    padding: 10px;
+    font-size: 14px;
+}
